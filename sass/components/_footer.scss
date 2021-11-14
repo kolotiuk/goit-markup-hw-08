@@ -1,0 +1,123 @@
+/* Footer */
+.footer {
+    padding: 60px 0;
+
+    background-color: $bg-color;
+}
+.footer__flex {
+    display: flex;
+    align-items: baseline;
+}
+.footer__logo {
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-right: 0;
+
+    line-height: 1.19;
+
+    color: $primary-white-color;
+}
+.footer__left {
+    margin-right: 70px;
+}
+.footer__address {
+    display: flex;
+    flex-direction: column;
+
+    font-style: normal;
+}
+.address__text {
+    margin-bottom: 9px;
+
+    color: $primary-white-color;
+    line-height: 1.71;
+}
+.address__link {
+    width: max-content;
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+
+    transition: color 250ms $cubic-bezier;
+
+}
+.address__link {
+    &:not(:last-child) {
+        margin-bottom: 9px;
+    }
+    &:hover,
+    &:focus {
+        color: $blue-color;
+    }
+}
+
+.footer__social {
+    margin-right: 93px;
+}
+.footer__social {
+    .text {
+        margin-bottom: 20px;
+    
+        font-weight: 700;
+    
+        text-transform: uppercase;
+        color: $primary-white-color;
+    }
+}
+.social__links {
+    display: flex;
+}
+.social__link {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.social__link:hover,
+.social__link:focus {
+    &:hover,
+    &:focus {
+        background-color: $blue-color;
+    }
+}
+.footer .social__icon {
+    fill: $primary-white-color;
+}
+
+.footer__right {
+    display: flex;
+}
+.footer__form {
+    color: $primary-white-color;
+}
+.footer__label {
+    display: block;
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.footer__input {
+    margin-right: 12px;
+    width: 358px;
+    height: 50px;
+    padding: 15px 0 15px 16px;
+
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+}
+.footer__input {
+    &::placeholder {
+        font-size: 16px;
+        line-height: 1.25;
+        color: rgba(255, 255, 255, 0.6);
+    }
+}
+.footer__subscribe {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer__right {
+    .icon {
+        margin-left: 10px;
+    }
+}

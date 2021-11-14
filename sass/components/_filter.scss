@@ -1,0 +1,32 @@
+/* Portfolio */
+.filter {
+    display: flex;
+    justify-content: center;
+    margin: -8px;
+    margin-bottom: 50px;
+}
+.filter__btn {
+    margin: 8px;
+    padding: 6px 22px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    background-color: #f5f4fa;
+
+    transition: color 250ms $cubic-bezier,
+        background-color 250ms $cubic-bezier,
+        box-shadow 250ms $cubic-bezier;
+}
+.filter__btn:hover,
+.filter__btn:focus {
+    &:hover,
+    &:focus {
+        color: $primary-white-color;
+        background-color: $blue-color;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+            1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+}

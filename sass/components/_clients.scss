@@ -1,0 +1,41 @@
+/* Clients */
+.clients__logo {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+}
+.clients__item {
+    margin: 15px;
+}
+.clients__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+
+    color: $grey-icon-color;
+    border: 1px solid $grey-icon-color;
+    border-radius: 4px;
+    transition: border-color 250ms $cubic-bezier;
+}
+.clients__link {
+    .icon {
+        transition: fill 250ms $cubic-bezier;
+    }
+}
+
+.clients__link {
+    &:hover,
+    &:focus {
+        border-color: $blue-color;
+        .icon {
+            fill: $blue-color;
+        }
+    }
+}
+.clients__item {
+    .icon {
+        fill: currentColor;
+    }
+}
