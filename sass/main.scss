@@ -1,6 +1,7 @@
 @import "./utils/variables";
 @import "./base/normalize";
 @import "./components/base";
+@import "./components/mobile.menu";
 @import "./components/header";
 @import "./components/hero";
 @import "./components/modal";
@@ -11,4 +12,5 @@
 @import "./components/filter";
 @import "./components/projects";
 @import "./components/footer";
+@import "./components/headers";
 

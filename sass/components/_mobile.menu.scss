@@ -1,0 +1,148 @@
+.nav {
+    display: flex;
+    @media (min-width: 768px) {
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.menu__button {
+    right: 0;
+    display: inline-flex;
+    margin-left: auto;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+
+    z-index: 100;
+  
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+
+    &:hover .icon {
+        fill: $blue-color;
+    }
+}
+
+.menu__button.is-open .icon-menu {
+    display: none;
+}
+
+.menu__button .icon-cross {
+    display: none;
+}
+
+.menu__button.is-open .icon-cross {
+    display: block;
+}
+
+
+.nav__header {
+    @media (max-width: 767px) {
+        display: none;
+        font-weight: 500;
+        padding: 48px 0 48px 40px;
+        
+        background: #FFFFFF;
+        left: 0;
+        z-index: 1; 
+        width: 100%;
+        max-height: 796px;
+    }
+    @media (min-width: 768px) {
+        display: flex;
+        align-items: center;
+
+        .nav__header--list {
+            &:last-child {
+                display: none;
+            }
+        }
+    }
+    @media (min-width: 1200px) {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+.menu__button.is-open ~ .nav__header {
+    @media (max-width: 767px) {
+        display: block;
+        position: absolute;
+
+        overflow-x: hidden;
+    }
+}
+
+.header__social {
+    display: flex;
+    margin: -10px;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+
+    letter-spacing: 0.02em;
+
+    color: $blue-color;
+    @media (min-width: 768px) {
+        display: none;
+    }
+
+    li {
+        padding: 0 10px;
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
+        &:last-child {
+            border-right: none;
+        }
+    }
+}
+
+.header__item {
+    @media (min-width: 768px) {
+        margin: 0 25px;
+    }
+}
+
+.header__link {
+    @media (min-width: 768px) {
+        position: relative;
+        display: flex;
+        align-items: center;
+        // padding: 32px 0;
+        font-size: 14px;
+        line-height: 1.14;
+    
+        font-weight: 500;
+    
+        transition: color 250ms $cubic-bezier;
+    }
+    &:hover,
+    &:focus {
+        color: $blue-color;
+
+        .header__icon {
+            fill: $blue-color;
+        }
+    }
+}
+
+.contact__list {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+
+    letter-spacing: 0.02em;
+
+    color: #757575;
+}
+
+.header__icon {
+    margin-right: 10px;
+    fill: $primary-text-color;
+
+    transition: fill 250ms $cubic-bezier;
+}
+
+
+
