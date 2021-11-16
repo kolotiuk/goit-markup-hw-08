@@ -28,7 +28,8 @@
                 <ul class="nav__header">
                     <li class="nav__header--list">
                         <ul class="header__list">
-                            <li class="header__item"><a href="./index.html" class="header__link link--active">Студия</a></li>
+                            <li class="header__item"><a href="./index.html" class="header__link link--active">Студия</a>
+                            </li>
                             <li class="header__item"><a href="./portfolio.html" class="header__link">Портфолио</a></li>
                             <li class="header__item"><a href="" class="header__link">Контакты</a></li>
                         </ul>
@@ -57,10 +58,13 @@
 
                     <li class="nav__header--list">
                         <ul class="header__social">
-                            <li><a href="https://www.instagram.com/" class="link--active" target="_blank">Instagram</a></li>
+                            <li><a href="https://www.instagram.com/" class="link--active" target="_blank">Instagram</a>
+                            </li>
                             <li><a href="https://www.twitter.com/" class="link--active" target="_blank">Twitter</a></li>
-                            <li><a href="https://www.facebook.com/" class="link--active" target="_blank">Facebook</a></li>
-                            <li><a href="https://www.linkedin.com/" class="link--active" target="_blank">Linkedin</a></li>
+                            <li><a href="https://www.facebook.com/" class="link--active" target="_blank">Facebook</a>
+                            </li>
+                            <li><a href="https://www.linkedin.com/" class="link--active" target="_blank">Linkedin</a>
+                            </li>
                         </ul>
                     </li>
                 </ul>
@@ -68,13 +72,13 @@
         </div>
     </header>
 
-    <main> 
+    <main>
         <section class="hero">
             <h1 class="hero__title">Эффективные решения <br> для вашего бизнеса</h1>
             <button type="button" class="button--primary" data-modal-open>Заказать услугу</button>
         </section>
 
-        <!-- <div class="backdrop is-hidden" data-modal>
+        <div class="backdrop is-hidden" data-modal>
             <div class="modal">
                 <button class="close__button" data-modal-close>
                     <svg class="close__icon" width="11" height="11">
@@ -120,17 +124,18 @@
                     </div>
 
                     <label class="checkbox__field">
-                        <input class="checkbox__input" type="checkbox" name="topic"/>
+                        <input class="checkbox__input" type="checkbox" name="topic" />
                         <span class="checkbox__icon"></span>
-                        <span class="checkbox__label">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></span>
+                        <span class="checkbox__label">Соглашаюсь с рассылкой и принимаю <a href="">Условия
+                                договора</a></span>
                     </label>
 
                     <button class="button--primary button-send" type="submit">Отправить</button>
                 </form>
             </div>
-        </div> -->
+        </div>
 
-        <!-- <section class="section">
+        <section class="section features__section">
             <div class="container">
                 <ul class="features__list">
                     <li class="features__item">
@@ -140,7 +145,8 @@
                             </svg>
                         </div>
                         <h3 class="features__title">Внимание к деталям</h3>
-                        <p class="features__text">Идейные соображения, а также начало повседневной работы по формированию
+                        <p class="features__text">Идейные соображения, а также начало повседневной работы по
+                            формированию
                             позиции.</p>
                     </li>
                     <li class="features__item">
@@ -175,23 +181,18 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
 
-        <!-- <section class="section section__work">
+        <section class="section section__work">
             <h2 class="section__title">Чем мы занимаемся</h2>
             <div class="container">
                 <ul class="work">
                     <li class="work__item">
                         <a href="" class="work__link">
-                            <img src="images/img1.jpg" alt="work at the computer" width="370">
-                            <div class="work__label">
-                                Десктопные приложения
-                            </div>
-                        </a>
-                    </li>
-                    <li class="work__item">
-                        <a href="" class="work__link">
-                            <img src="images/img2.jpg" alt="work at the phone" width="370">
+                            <img src="./images/work/work-img1.jpg" alt="image computer" srcset="
+                                ./images/work/work-img1.jpg,
+                                ./images/work/work-img1@2x.jpg 2x
+                              " />
                             <div class="work__label">
                                 Мобильные приложения
                             </div>
@@ -199,22 +200,50 @@
                     </li>
                     <li class="work__item">
                         <a href="" class="work__link">
-                            <img src="images/img3.jpg" alt="work at the tablet" width="370">
+                            <img src="./images/work/work-img2.jpg" alt="image computer" srcset="
+                                ./images/work/work-img2.jpg,
+                                ./images/work/work-img2@2x.jpg 2x
+                              " />
                             <div class="work__label">
-                                Дизайнерские решения
+                                Мобильные приложения
+                            </div>
+                        </a>
+                    </li>
+                    <li class="work__item">
+                        <a href="" class="work__link">
+                            <img src="./images/work/work-img3.jpg" alt="image computer" srcset="
+                                ./images/work/work-img3.jpg,
+                                ./images/work/work-img3@2x.jpg 2x
+                              " />
+                            <div class="work__label">
+                                Мобильные приложения
                             </div>
                         </a>
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
 
-        <!-- <section class="section section__team">
+        <section class="section section__team">
             <h2 class="section__title">Наша команда</h2>
             <div class="container">
                 <ul class="team">
                     <li class="team__item">
-                        <img src="images/photo1.jpg" alt="the guy in the picture" width="270">
+                        <picture>
+                            <source srcset="
+                                ./images/team/photo1-mobile.jpg   1x,
+                                ./images/team/photo1-mobile@2x.jpg 2x
+                              " media="(max-width: 767px)" />
+                            <source srcset="
+                                ./images/team/photo1-tablet.jpg 1x,
+                                ./images/team/photo1-tablet.jpg 2x
+                              " media="(min-width: 768px)" />
+                            <source srcset="
+                                ./images/team/photo1-desktop.jpg    1x,
+                                ./images/team/photo1-desktop@2x.jpg 2x
+                              " media="(min-width: 1200px)" />
+                            <img class="photo" src="./images/team/photo-mobile.jpg" alt="Игорь Демьяненко" />
+                        </picture>
                         <h3 class="team__title">Игорь Демьяненко</h3>
                         <p lang="en" class="team__text">Product Designer</p>
                         <ul class="social">
@@ -249,7 +278,21 @@
                         </ul>
                     </li>
                     <li class="team__item">
-                        <img src="images/photo2.jpg" alt="the girl in the picture" width="270">
+                        <picture>
+                            <source srcset="
+                                ./images/team/photo2-mobile.jpg   1x,
+                                ./images/team/photo2-mobile@2x.jpg 2x
+                              " media="(max-width: 767px)" />
+                            <source srcset="
+                                ./images/team/photo2-tablet.jpg 1x,
+                                ./images/team/photo2-tablet.jpg 2x
+                              " media="(min-width: 768px)" />
+                            <source srcset="
+                                ./images/team/photo2-desktop.jpg    1x,
+                                ./images/team/photo2-desktop@2x.jpg 2x
+                              " media="(min-width: 1200px)" />
+                            <img class="photo" src="./images/team/photo2-mobile.jpg" alt="Ольга Репина" />
+                        </picture>
                         <h3 class="team__title">Ольга Репина</h3>
                         <p lang="en" class="team__text">Frontend Developer</p>
                         <ul class="social">
@@ -284,7 +327,21 @@
                         </ul>
                     </li>
                     <li class="team__item">
-                        <img src="images/photo3.jpg" alt="the guy in the picture" width="270">
+                        <picture>
+                            <source srcset="
+                                ./images/team/photo3-mobile.jpg   1x,
+                                ./images/team/photo3-mobile@2x.jpg 2x
+                              " media="(max-width: 767px)" />
+                            <source srcset="
+                                ./images/team/photo3-tablet.jpg 1x,
+                                ./images/team/photo3-tablet.jpg 2x
+                              " media="(min-width: 768px)" />
+                            <source srcset="
+                                ./images/team/photo3-desktop.jpg    1x,
+                                ./images/team/photo3-desktop@2x.jpg 2x
+                              " media="(min-width: 1200px)" />
+                            <img class="photo" src="./images/team/photo3-mobile.jpg" alt="Игорь Демьяненко" />
+                        </picture>
                         <h3 class="team__title">Николай Тарасов</h3>
                         <p lang="en" class="team__text">Marketing</p>
                         <ul class="social">
@@ -319,7 +376,21 @@
                         </ul>
                     </li>
                     <li class="team__item">
-                        <img src="images/photo4.jpg" alt="the guy in the picture" width="270">
+                        <picture>
+                            <source srcset="
+                                ./images/team/photo4-mobile.jpg   1x,
+                                ./images/team/photo4-mobile@2x.jpg 2x
+                              " media="(max-width: 767px)" />
+                            <source srcset="
+                                ./images/team/photo4-tablet.jpg 1x,
+                                ./images/team/photo4-tablet.jpg 2x
+                              " media="(min-width: 768px)" />
+                            <source srcset="
+                                ./images/team/photo4-desktop.jpg    1x,
+                                ./images/team/photo4-desktop@2x.jpg 2x
+                              " media="(min-width: 1200px)" />
+                            <img class="photo" src="./images/team/photo4-mobile.jpg" alt="Игорь Демьяненко" />
+                        </picture>
                         <h3 class="team__title">Михаил Ермаков</h3>
                         <p lang="en" class="team__text">UI Designer</p>
                         <ul class="social">
@@ -355,9 +426,9 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
 
-        <!-- <section class="section section__clients">
+        <section class="section section__clients">
             <h2 class="section__title">Постоянные клиенты</h2>
             <div class="container">
                 <ul class="clients__logo">
@@ -405,7 +476,7 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section> 
     </main>
 
     <!-- <footer class="footer">
