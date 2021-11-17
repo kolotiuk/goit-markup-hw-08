@@ -1289,6 +1289,12 @@ ul {
   }
 }
 
+@media (min-width: 768px) {
+  .clients__link {
+    width: 226px;
+  }
+}
+
 @media (min-width: 1200px) {
   .clients__link {
     width: 170px;
