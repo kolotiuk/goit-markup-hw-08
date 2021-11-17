@@ -1,3 +1,8 @@
+.dn {
+    display: none!important;
+}
+
+
 body {
     font-size: 14px;
     line-height: 1.14;
@@ -5,6 +10,10 @@ body {
     color: $primary-title-color;
     font-family: "Roboto", sans-serif;
     letter-spacing: 0.03em;
+}
+
+body.modal-open {
+    overflow: hidden;
 }
 
 .link--active {
@@ -63,6 +72,9 @@ ul {
 
 .section {
     padding: 60px 0;
+    @media (min-width: 1200px) {
+        padding: 94px 0;
+    }
 }
 
 .button--primary {
