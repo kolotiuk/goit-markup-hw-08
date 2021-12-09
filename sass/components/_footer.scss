@@ -4,6 +4,9 @@
 
     background-color: $bg-color;
     text-align: center;
+    @media (min-width : 1200px) {
+        text-align: left;
+    }
 }
 .footer__flex {
     @media (min-width: 768px) {
@@ -42,7 +45,6 @@
     color: rgba(255, 255, 255, 0.6);
 
     transition: color 250ms $cubic-bezier;
-
 }
 .address__link {
     &:not(:last-child) {
@@ -57,9 +59,9 @@
 .footer__social {
     .text {
         margin-bottom: 20px;
-    
+
         font-weight: 700;
-    
+
         text-transform: uppercase;
         color: $primary-white-color;
     }
@@ -101,6 +103,7 @@
     height: 50px;
     padding: 15px 0 15px 16px;
 
+    color: $primary-white-color;
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));

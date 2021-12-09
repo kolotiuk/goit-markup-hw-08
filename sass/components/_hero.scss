@@ -6,26 +6,27 @@
     height: 400px;
     max-width: 1600px;
     text-align: center;
+    margin: 0 auto;
 
     background-color: $bg-color;
     background-repeat: no-repeat;
     background-size: cover;
     @media screen and (max-width: 767px) {
         @include bg-img(
-          '../images/hero/hero-bg480.jpg',
-          '../images/hero/hero-bg480@2x.jpg'
+            "../images/hero/hero-bg480.jpg",
+            "../images/hero/hero-bg480@2x.jpg"
         );
     }
     @media screen and (min-width: 768px) {
         @include bg-img(
-            '../images/hero/hero-bg768.jpg',
-            '../images/hero/hero-bg768@2x.jpg'
+            "../images/hero/hero-bg768.jpg",
+            "../images/hero/hero-bg768@2x.jpg"
         );
     }
     @media screen and (min-width: 1200px) {
         @include bg-img(
-            '../images/hero/hero-bg1600.jpg',
-            '../images/hero/hero-bg1600@2x.jpg'
+            "../images/hero/hero-bg1600.jpg",
+            "../images/hero/hero-bg1600@2x.jpg"
         );
 
         height: 600px;

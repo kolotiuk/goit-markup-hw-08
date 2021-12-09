@@ -35,6 +35,10 @@
 
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms $cubic-bezier;
+
+    @media (min-width: 1200px) {
+        max-width: 528px;
+    }
 }
 .close__button {
     position: absolute;
@@ -86,6 +90,7 @@
     position: relative;
 }
 .form__input {
+    height: 40px;
     width: 100%;
     padding: 12px 35px;
 
@@ -125,6 +130,7 @@
     position: relative;
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-bottom: 30px;
 }
 .checkbox__input {
@@ -158,9 +164,15 @@
 }
 
 .checkbox__label {
+    color: $primary-text-color;
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.03em;
+
+    @media (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.71;
+    }
 }
 .checkbox__label { 
     a {

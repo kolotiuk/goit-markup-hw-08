@@ -22,7 +22,10 @@
     }
 }
 .features__icon {
-    padding: 25px 100px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 30px;
 
     text-align: center;

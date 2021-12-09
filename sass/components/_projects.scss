@@ -24,8 +24,8 @@
     transition: box-shadow 250ms $cubic-bezier;
     &:hover,
     &:focus {
-        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-        1px 4px 6px rgba(0, 0, 0, 0.16);
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+            0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
         .overlay__block {
             opacity: 1;
             transform: translateY(0);
@@ -59,8 +59,7 @@
     opacity: 0;
 
     transform: translateY(100%);
-    transition: opacity 250ms $cubic-bezier,
-        transform 250ms $cubic-bezier;
+    transition: opacity 250ms $cubic-bezier, transform 250ms $cubic-bezier;
 }
 .overlay__img {
     width: 100%;
