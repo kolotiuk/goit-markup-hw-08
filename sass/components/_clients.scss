@@ -1,6 +1,5 @@
 /* Clients */
 .clients__logo {
-    
     margin: -15px;
     @media (min-width: 480px) {
         display: flex;
@@ -16,7 +15,6 @@
     justify-content: center;
     align-items: center;
     height: 100%;
-    
 
     color: $grey-icon-color;
     border: 1px solid $grey-icon-color;
@@ -31,7 +29,6 @@
     @media (min-width: 1200px) {
         width: 170px;
     }
-    
 }
 .clients__link {
     .icon {
