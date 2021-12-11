@@ -3,15 +3,16 @@
     background-color: $secondary-bg-color;
 }
 .team {
-    margin: -15px;
+    margin-bottom: -30px;
     @media (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
+        margin: -15px;
     }
 }
 .team__item {
     padding-bottom: 24px;
-    margin: 15px;
+    margin-bottom: 30px;
     .photo {
         width: 100%;
     }
@@ -24,6 +25,7 @@
 
     @media (min-width: 768px) {
         width: calc((100% - 60px) / 2);
+        margin: 15px;
     }
     @media (min-width: 1200px) {
         width: calc((100% - 120px) / 4);
