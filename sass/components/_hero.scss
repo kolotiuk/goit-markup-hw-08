@@ -31,20 +31,21 @@
 
         height: 600px;
     }
-}
 
-.hero__title {
-    margin-bottom: 30px;
-
-    font-size: 26px;
-    line-height: 1.62;
-    text-align: center;
-    letter-spacing: 0.06em;
-    color: $primary-white-color;
-    font-weight: 900;
-    text-transform: uppercase;
-    @media (min-width: 1200px) {
-        font-size: 44px;
-        line-height: 1.36;
+    &__title {
+        margin-bottom: 30px;
+    
+        font-size: 26px;
+        line-height: 1.62;
+        text-align: center;
+        letter-spacing: 0.06em;
+        color: $primary-white-color;
+        font-weight: 900;
+        text-transform: uppercase;
+        @media (min-width: 1200px) {
+            font-size: 44px;
+            line-height: 1.36;
+        }
     }
 }
+
